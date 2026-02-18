@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adams, Ilocos Norte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="images/logo.png.png" alt="Adams Logo">
+        </div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Other Info</a></li>
+        <li><a href="#spots">Tourist Spots</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+    <div class="overlay">
+        <h1>Chase Sunsets & Waterfalls</h1>
+        <p>Adams, Ilocos Norte</p>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section class="intro" id="about">
+    <h2>Welcome to Adams</h2>
+    <p>
+        Adams, Ilocos Norte is a peaceful mountain town similar to Baguio City in climate and terrain.
+        Surrounded by forests and cloud-covered mountains, it remains untouched by modern development.
+    </p>
+    <p>
+        The town preserves strong cultural traditions and relies mainly on agriculture, making it a
+        beautiful example of harmony between people and nature.
+    </p>
+</section>
+
+<!-- TOURIST SPOTS -->
+<section class="places" id="spots">
+
+    <!-- VIEWDECK -->
+    <div class="place-card">
+        <img src="images/viewdeck.png.jpg" alt="Viewdeck">
+        <div class="text">
+            <h3>Overlooking Viewdeck</h3>
+            <p>A scenic viewpoint showing rolling hills, forests, rivers, and rice fields. Sorrounded by lush
+                woodlands, streams, and terraced farms. Hidden gem for nature lovers and photographers.
+            </p>
+        </div>
+    </div>
+
+    <!-- ANUPLIG FALLS -->
+    <div class="place-card reverse">
+        <img src="images/anuplig.png.png" alt="Anuplig Falls">
+        <div class="text">
+            <h3>Anuplig Falls</h3>
+            <p>A 25-foot waterfall with refreshing waters and natural basins. In the region
+                of Adams are 18 waterfalls, with Anuplig Falls being the most popular.
+            </p>
+
+            <button class="info-btn" onclick="toggleInfo()">Read More</button>
+
+            <div class="extra-info" id="extra">
+                <p>
+                    The hike to Anuplig Falls takes about two hours and includes river crossings and
+                    forest trails. The waters flow into the Bolo River and reach the China Sea.
+                </p>
+                <img src="images/anuplig2.png" alt="Anuplig Falls View">
+            </div>
+        </div>
+    </div>
+
+    <!-- LOVERS PEAK -->
+    <div class="place-card">
+        <img src="images/lovers peak.png.jpeg" alt="Lovers Peak">
+        <div class="text">
+            <h3>Lovers’ Peak</h3>
+            <p>
+                Famous for dramatic sunrises and sunsets with panoramic mountain views. The spot serves as 
+                a romantic getaway for couples and a peaceful retreat for nature lovers. A travel to Adams
+                is incomplete without visiting Lovers' Peak.
+            </p>
+        </div>
+    </div>
+
+    <!-- HANGING BRIDGE -->
+    <div class="place-card reverse">
+        <img src="images/hanging bridge.png.jpg" alt="Hanging Bridge">
+        <div class="text">
+            <h3>Hanging Bridge</h3>
+            <p>
+                The longest hanging bridge in Ilocos Norte and a vital lifeline of the town. It connects 
+                communities and offers stunning views of the Bolo River and surrounding forests.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Adams, Ilocos Norte | Nature • Culture • Heritage</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+function toggleInfo() {
+    const info = document.getElementById("extra");
+    info.style.display = info.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
